@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,     
+         td {
+        border: solid 2px #000;
+        padding: 10px;
+      }
+
+      table {
+        margin: 50px;
+        border-collapse: collapse;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      </style>
+</head>
+<body>
+    <h3>Inline</h3>
+    <ul>
+        <li>a</li>
+        <li>button</li>
+        <li>area</li>
+        <li>label</li>
+    </ul>
+    <h3>Blok</h3>
+    <ul>
+        <li>footer</li>
+        <li>article</li>
+        <li>body</li>
+        <li>video</li>
+    </ul>
+
+    <table>
+        <caption>Розклад уроків</caption>
+        <thead>
+            <th>Понеділок</th>
+            <th>Вівторок</th>
+            <th>Середа</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Алгебра</td>
+                <td>Англіська мова</td>
+                <td>Мистецтво</td>
+            </tr>
+            <tr>
+                <td>Геометрія</td>
+                <td>Фізична культура</td>
+                <td>Географія</td>
+            </tr>
+            <tr>
+                <td>Українська мова</td>
+                <td>Німецька мова</td>
+                <td>Біологія</td>
+            </tr>
+            <tr>
+                <td>Українська мова</td>
+                <td>Хімія</td>
+                <td>Фізика</td>
+            </tr>
+            <tr>
+                <td>Фізика</td>
+                <td>Історія</td>
+                <td>Історія</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Кількість уроків</th>
+                <th colspan="2">15</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form>
+        <label>Name
+            <input type="text" name="user_name" />
+        </label>
+
+        <label>Email
+            <input type="email" name="email" />
+        </label>
+
+        <label> Number
+            <input type="tel" name="tel" />
+        </label>
+        <label for="coment">Coment</label>
+        <textarea id="coment"></textarea>
+        <div>
+          <button type="submit">submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
