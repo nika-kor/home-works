@@ -45,7 +45,7 @@ h2 {
 .tl {
     margin-top: 0;
 }
-a:hover{
+.navigation:hover{
     color: #2196F3;
 }
 .navigation {
@@ -54,6 +54,20 @@ a:hover{
 .number {
     color: #757575;
 }
-/* .logo {
+.studio {
+    color: #2196F3;
+}
+.studio:hover {
     color: black;
-} */
+}
+.number:hover {
+    color: #2196F3;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}

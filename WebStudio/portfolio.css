@@ -1,0 +1,75 @@
+footer {
+    background-color: #2F303A;
+    color:white;
+    width: 100%;
+    height: 252px;
+    padding: 10px;
+}
+/* .backg {
+    background-color: #F5F4FA;
+    width: 370px;
+    height: 404px; 
+}  */
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.card {
+    width: 370px;
+    height: 404px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin: 0 30px 30px;
+}
+.navigation:hover{
+    color: #2196F3;
+}
+.navigation {
+    color: black;
+}
+.number {
+    color: #757575;
+}
+.portfolio {
+    color: #2196F3;
+}
+.portfolio:hover {
+    color: black;
+}
+.number:hover {
+    color: #2196F3;
+}
+/* button {
+    background-color: #2196F3;
+    color: white;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+} */
+.line2 {
+    width: 100%;
+    height: 3px;
+    background-color:#ECECEC;
+    border: none;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.btn {
+    background-color: #F5F4FA;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 3px;
+}
+.active {
+    background-color: #2196F3;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 3px;
+}
+.navs {
+    text-align: center;
+}
