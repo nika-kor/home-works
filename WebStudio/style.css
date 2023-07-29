@@ -1,13 +1,24 @@
+:root {
+    --link-color:black;
+    --active-link-color: #2196F3;
+    --bkg-color: #2F303A;
+    --text-white-color: #fff:
+    --main-color: red;
+}
 .title {
-    background-color: #2F303A;
-    color:white;
+    /* background-color: #2F303A; */
+    background-color: var(--bkg-color);
+    /* color:white; */
+    color: var(--text-white-color);
     padding-top: 80px;
     padding-bottom: 60px;
     text-align: center;
 }
 button {
-    background-color: #2196F3;
-    color: white;
+    /* background-color: #2196F3; */
+    background-color: var(--active-link-color);
+    /* color: white; */
+    color: var(--text-white-color);
     width: 216px;
     height: 50px;
     border-radius: 4px;
@@ -21,8 +32,10 @@ h1 {
     margin: 0 auto 20px;
 }
 footer {
-    background-color: #2F303A;
-    color:white;
+    /* background-color: #2F303A; */
+    background-color: var(--bkg-color);
+    /* color:white; */
+    /* color: var(--text-white-color); */
     width: 100%;
     height: 252px;
     padding: 10px;
@@ -50,13 +63,15 @@ h2 {
     color: #2196F3;
 }
 .navigation {
-    color: black;
+    /* color: black; */
+    color: var(--link-color);
 }
 .number {
     color: #757575;
 }
 .studio {
-    color: #2196F3;
+    /* color: #2196F3; */
+    color: var(--active-link-color);
 }
 .studio:hover {
     color: black;
