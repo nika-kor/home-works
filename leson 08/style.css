@@ -1,0 +1,47 @@
+.yellow {
+    color: yellow;
+}
+#greycol {
+    color: grey;
+}
+.text-box h3:first-child {
+    color: pink;
+}
+.text-box div p {
+    color: red;
+}
+p:nth-child(7) {
+    color: green;
+}
+
+
+h4:hover {
+    color: brown;
+}
+ol li:first-child {
+    color: blue;
+}
+ol li:last-child {
+    color: greenyellow;
+}
+ol:not(.wed) {
+    background-color: blueviolet;
+    width: 200px;
+}
+.wed li:nth-child(3) {
+    color: rebeccapurple;
+}
+.wed li:nth-child(4) {
+    color: red;
+}
+li:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+li:nth-child(even) {
+    font-size: 20px;
+}
+li:nth-child(odd) {
+    background-color: olive;
+    width: 200px;
+}

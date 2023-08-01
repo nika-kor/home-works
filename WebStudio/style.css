@@ -8,8 +8,8 @@
 .title {
     /* background-color: #2F303A; */
     background-color: var(--bkg-color);
-    /* color:white; */
-    color: var(--text-white-color);
+    color:white;
+    /* color: var(--text-white-color); */
     padding-top: 80px;
     padding-bottom: 60px;
     text-align: center;
@@ -17,8 +17,8 @@
 button {
     /* background-color: #2196F3; */
     background-color: var(--active-link-color);
-    /* color: white; */
-    color: var(--text-white-color);
+    color: white;
+    /* color: var(--text-white-color); */
     width: 216px;
     height: 50px;
     border-radius: 4px;
@@ -34,7 +34,7 @@ h1 {
 footer {
     /* background-color: #2F303A; */
     background-color: var(--bkg-color);
-    /* color:white; */
+    color:white;
     /* color: var(--text-white-color); */
     width: 100%;
     height: 252px;
