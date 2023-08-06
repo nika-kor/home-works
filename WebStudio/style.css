@@ -2,8 +2,11 @@
     --link-color:black;
     --active-link-color: #2196F3;
     --bkg-color: #2F303A;
-    --text-white-color: #fff:
-    --main-color: red;
+    /* --text-white-color: #fff: */
+    /* --main-color: red; */
+}
+h1 {
+    font-family: Roboto;
 }
 .title {
     /* background-color: #2F303A; */
@@ -24,6 +27,8 @@ button {
     border-radius: 4px;
     font-size: 16px;
     border: none;
+    font-family: Roboto;
+    font-weight: 700;
 }
 h1 {
     font-size: 44px;
@@ -43,6 +48,8 @@ footer {
 h2 {
     text-align: center;
     font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
 }
 .card {
     width: 270px;
@@ -65,6 +72,8 @@ h2 {
 .navigation {
     /* color: black; */
     color: var(--link-color);
+    font-size: Roboto;
+    font-weight: 500;
 }
 .number {
     color: #757575;
@@ -86,4 +95,38 @@ button:hover {
 .card:hover {
     transform: scale(1.05);
     transition: all 0.3s;
+}
+/* font */
+.web {
+    font-family: Raleway;
+    color: #2196F3; 
+    font-size: 26px;
+}
+.logo {
+    font-family: Raleway;
+    text-decoration: none; 
+    color: black;
+    font-size: 26px;
+}
+.logo2 {
+    font-family: Raleway;
+    text-decoration: none; 
+    color: white; 
+    font-size: 26px;
+}
+.studio {
+    font-family: Roboto;
+    font-weight: 500;
+}
+.navigation {
+    font-family: Roboto;
+    font-weight: 400;
+} 
+.number {
+    font-family: Roboto;
+    font-weight: 400;
+}
+.name {
+    font-family: Roboto;
+    font-weight: 500;
 }
