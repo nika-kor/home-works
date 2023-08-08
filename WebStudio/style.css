@@ -2,26 +2,80 @@
     --link-color:black;
     --active-link-color: #2196F3;
     --bkg-color: #2F303A;
-    /* --text-white-color: #fff: */
-    /* --main-color: red; */
 }
-h1 {
+
+    /* nav */
+
+.navigation:hover{
+    color: #2196F3;
+}
+.navigation {
+    color: var(--link-color);
+    font-size: Roboto;
+    font-weight: 500;
+}
+.number {
+    color: #757575;
+}
+.studio {
+    color: var(--active-link-color);
+    text-decoration: none; 
+    font-size: 14px;
+}
+.studio:hover {
+    color: black;
+}
+.number:hover {
+    color: #2196F3;
+}
+.web {
+    font-family: Raleway;
+    color: #2196F3; 
+    font-size: 26px;
+}
+.logo {
+    font-family: Raleway;
+    text-decoration: none; 
+    color: black;
+    font-size: 26px;
+}
+.studio {
     font-family: Roboto;
+    font-weight: 500;
 }
+.navigation {
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+} 
+.number {
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none; 
+    font-size: 14px;
+}
+
+    /* header */
+
 .title {
-    /* background-color: #2F303A; */
     background-color: var(--bkg-color);
     color:white;
-    /* color: var(--text-white-color); */
     padding-top: 80px;
     padding-bottom: 60px;
     text-align: center;
 }
+h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto 20px;
+    font-family: Roboto;
+    font-weight: 900;
+}
 button {
-    /* background-color: #2196F3; */
     background-color: var(--active-link-color);
     color: white;
-    /* color: var(--text-white-color); */
     width: 216px;
     height: 50px;
     border-radius: 4px;
@@ -30,27 +84,40 @@ button {
     font-family: Roboto;
     font-weight: 700;
 }
-h1 {
-    font-size: 44px;
-    text-transform: uppercase;
-    max-width: 696px;
-    margin: 0 auto 20px;
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
-footer {
-    /* background-color: #2F303A; */
-    background-color: var(--bkg-color);
-    color:white;
-    /* color: var(--text-white-color); */
-    width: 100%;
-    height: 252px;
-    padding: 10px;
+
+    /* features */
+
+.features-title {
+    margin-top: 0;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 15px; 
+    color: black;
+    max-width: 270px;
 }
+.features-desc {
+    font-family: Roboto;
+    font-weight: 400;
+     font-size: 14px; 
+     color: #757575; 
+     max-width: 270px;
+}
+
+    /* Чим ми займаємося */
+
 h2 {
     text-align: center;
     font-size: 36px;
     font-family: Roboto;
     font-weight: 700;
 }
+
+    /* Наша команда */
+
 .card {
     width: 270px;
     height: 368px;
@@ -63,50 +130,33 @@ h2 {
     width: 100%;
     height: 648px;
 }
-.tl {
-    margin-top: 0;
-}
-.navigation:hover{
-    color: #2196F3;
-}
-.navigation {
-    /* color: black; */
-    color: var(--link-color);
-    font-size: Roboto;
-    font-weight: 500;
-}
-.number {
-    color: #757575;
-}
-.studio {
-    /* color: #2196F3; */
-    color: var(--active-link-color);
-}
-.studio:hover {
-    color: black;
-}
-.number:hover {
-    color: #2196F3;
-}
-button:hover {
-    transform: scale(1.05);
-    transition: all 0.3s;
-}
+
 .card:hover {
     transform: scale(1.05);
     transition: all 0.3s;
 }
-/* font */
-.web {
-    font-family: Raleway;
-    color: #2196F3; 
-    font-size: 26px;
+.name {
+    font-family: Roboto;
+    font-weight: 500;
+    color: black; 
+    font-size: 16px; 
+    text-align: center;
 }
-.logo {
-    font-family: Raleway;
-    text-decoration: none; 
-    color: black;
-    font-size: 26px;
+.desc {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #757575; 
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--bkg-color);
+    color:white;
+    width: 100%;
+    height: 252px;
+    padding: 10px;
 }
 .logo2 {
     font-family: Raleway;
@@ -114,19 +164,14 @@ button:hover {
     color: white; 
     font-size: 26px;
 }
-.studio {
-    font-family: Roboto;
-    font-weight: 500;
-}
-.navigation {
-    font-family: Roboto;
-    font-weight: 400;
-} 
-.number {
+.location {
+    text-decoration: none; color: #FFFFFF;
     font-family: Roboto;
     font-weight: 400;
 }
-.name {
+.link {
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 400;
+    text-decoration: none; 
+    color: #FFFFFF99;
 }

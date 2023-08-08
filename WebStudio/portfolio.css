@@ -1,10 +1,98 @@
-footer {
-    background-color: #2F303A;
-    color:white;
-    width: 100%;
-    height: 252px;
-    padding: 10px;
+:root {
+    --link-color:black;
+    --active-link-color: #2196F3;
+    --bkg-color: #2F303A;
 }
+
+   /* nav */
+
+.navigation:hover{
+    color: #2196F3;
+}
+.navigation {
+    color: var(--link-color);
+    font-size: Roboto;
+    font-weight: 500;
+}
+.number {
+    color: #757575;
+}
+.studio {
+    color: var(--active-link-color);
+    text-decoration: none; 
+    font-size: 14px;
+}
+.portfolio:hover {
+    color: black;
+}
+.number:hover {
+    color: #2196F3;
+}
+.web {
+    font-family: Raleway;
+    color: #2196F3; 
+    font-size: 26px;
+}
+.logo {
+    font-family: Raleway;
+    text-decoration: none; 
+    color: black;
+    font-size: 26px;
+}
+.portfolio {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #2196F3;
+    text-decoration: none;
+}
+.navigation {
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+} 
+.number {
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none; 
+    font-size: 14px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color:#ECECEC;
+    border: none;
+}
+
+    /* button */
+
+.navs {
+    text-align: center;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.btn {
+    background-color: #F5F4FA;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+.active {
+    background-color: #2196F3;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+    /* card */
+
 .card:hover {
     transform: scale(1.05);
     transition: all 0.3s;
@@ -17,49 +105,40 @@ footer {
     border: 1px solid #EEEEEE;
     margin: 0 30px 30px;
 }
-.navigation:hover{
-    color: #2196F3;
-}
-.navigation {
-    color: black;
-}
-.number {
-    color: #757575;
-}
-.portfolio {
-    color: #2196F3;
-}
-.portfolio:hover {
-    color: black;
-}
-.number:hover {
-    color: #2196F3;
-}
-.line {
-    width: 100%;
-    height: 1px;
-    background-color:#ECECEC;
-    border: none;
-}
-button:hover {
-    transform: scale(1.05);
-    transition: all 0.3s;
-}
-.btn {
-    background-color: #F5F4FA;
-    padding: 8px 20px 8px 20px;
-    border: none;
-    border-radius: 3px;
-}
-.active {
-    background-color: #2196F3;
-    padding: 8px 20px 8px 20px;
-    border: none;
-    border-radius: 3px;
-}
-.navs {
-    text-align: center;
+.title {
+    padding-left: 30px;
+    font-family: Roboto;
+    font-weight: 700;
 }
 .text {
     padding-left: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--bkg-color);
+    color:white;
+    width: 100%;
+    height: 252px;
+    padding: 10px;
+}
+.logo2 {
+    font-family: Raleway;
+    text-decoration: none; 
+    color: white; 
+    font-size: 26px;
+}
+.location {
+    text-decoration: none; color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 400;
+}
+.link {
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: none; 
+    color: #FFFFFF99;
 }
