@@ -19,8 +19,7 @@ body {
     columns: 2;
 }
 .header-logo {
-    font-family: Raleway;
-    text-decoration: none; 
+    font-family: Raleway; 
     color: black;
     font-size: 26px;
 }
@@ -36,8 +35,7 @@ body {
     text-align: left;
 }
 .nav-list-link {
-    color: var(--link-color);
-    text-decoration: none; 
+    color: var(--link-color); 
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -68,8 +66,7 @@ body {
     text-align: left;
 }
 .contacts-list-link {
-    font-weight: 400;
-    text-decoration: none; 
+    font-weight: 400; 
     color: #757575;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -228,16 +225,14 @@ body {
     text-align: left;
 }
 .footer-logo {
-    font-family: Raleway;
-    text-decoration: none; 
+    font-family: Raleway; 
     color: white; 
     font-size: 26px;  
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
 }
-.address-list-location {
-    text-decoration: none; 
+.address-list-location { 
     color: #FFFFFF;
     font-weight: 400;
     font-family: Roboto;
@@ -246,11 +241,9 @@ body {
     text-align: left;    
 }
 .address-list-link {
-    font-weight: 400;
-    text-decoration: none; 
+    font-weight: 400; 
     color: #FFFFFF99;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    
 }
