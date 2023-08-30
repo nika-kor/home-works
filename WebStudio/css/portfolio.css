@@ -10,17 +10,28 @@ body {
 
    /* nav */
 
-   .nav-list {
-    list-style:none; 
-    columns: 3;
+   .nav {
+    display: flex;
+    justify-content: space-between;
+}
+.wrap-nav {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.nav-list {
+    display: flex;
+    gap: 50px;
 }
 .contacts-list {
-    list-style:none; 
-    columns: 2;
+    display: flex;
+    gap: 50px;
 }
+
 .header-logo {
-    font-family: Raleway;
-    text-decoration: none; 
+    font-family: Raleway; 
     color: black;
     font-size: 26px;
 }
@@ -36,8 +47,7 @@ body {
     text-align: left;
 }
 .nav-list-link {
-    color: var(--link-color);
-    text-decoration: none; 
+    color: var(--link-color); 
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -68,8 +78,7 @@ body {
     text-align: left;
 }
 .contacts-list-link {
-    font-weight: 400;
-    text-decoration: none; 
+    font-weight: 400; 
     color: #757575;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -77,6 +86,17 @@ body {
 }
     /* button */
 
+.filter-list {
+    display: flex;
+    gap: 8px;
+}
+.wrap-portfolio {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 40px;
+}
 .section-portfolio {
     text-align: center;
 }
@@ -109,6 +129,13 @@ button:hover {
 
     /* список */
 
+.wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 .portfolio-list {
     list-style:none; 
     columns: 3;
@@ -132,6 +159,8 @@ button:hover {
     line-height: 2.0;
     letter-spacing: 0.06em;
     text-align: left;
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 .portfolio-list-desc {
     padding-left: 30px;
@@ -141,18 +170,22 @@ button:hover {
     letter-spacing: 0.03em;
     text-align: left;
     color: #757575;
+    padding-bottom: 20px;
 }
 
 /* footer */
 
-.address-list {
-    list-style:none
+.wrap-footer {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer {
     background-color: var(--bkg-color);
     color:white;
     width: 100%;
-    height: 252px;
     padding: 10px;
 }
 .footer-web {
@@ -165,29 +198,32 @@ button:hover {
     text-align: left;
 }
 .footer-logo {
-    font-family: Raleway;
-    text-decoration: none; 
+    font-family: Raleway; 
     color: white; 
     font-size: 26px;  
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    padding-left: 40px;
 }
-.address-list-location {
-    text-decoration: none; 
+.address-list-location { 
     color: #FFFFFF;
     font-weight: 400;
     font-family: Roboto;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: left;    
+    text-align: left;
 }
 .address-list-link {
-    font-weight: 400;
-    text-decoration: none; 
+    font-weight: 400; 
     color: #FFFFFF99;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    
+}
+.address-list-item {
+    padding-bottom: 9px;
+}
+.address-list {
+    padding-top: 20px;
 }
