@@ -10,16 +10,24 @@ body {
 
    /* nav */
 
-   .nav {
+.nav {
     display: flex;
     justify-content: space-between;
+    gap: 93px;
+    align-items: center;
 }
 .wrap-nav {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav-list {
     display: flex;
@@ -28,6 +36,7 @@ body {
 .contacts-list {
     display: flex;
     gap: 50px;
+    margin-left: auto;
 }
 
 .header-logo {
@@ -84,6 +93,7 @@ body {
     letter-spacing: 0.02em;
     text-align: left;
 }
+
     /* button */
 
 .filter-list {
@@ -94,11 +104,13 @@ body {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .section-portfolio {
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 40px;
 }
 button:hover {
     transform: scale(1.05);
@@ -130,15 +142,19 @@ button:hover {
     /* список */
 
 .wrap {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.portfolio {
+    padding-bottom: 94px;
 }
 .portfolio-list { 
-    /* columns: 3; */
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     padding: 0;
     display: flex;
@@ -186,14 +202,14 @@ button:hover {
 /* footer */
 
 .wrap-footer {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .address-list {
     display: flex;
@@ -206,6 +222,8 @@ button:hover {
     color:white;
     width: 100%;
     padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-web {
     font-family: Raleway;
