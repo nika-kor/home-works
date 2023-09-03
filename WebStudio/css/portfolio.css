@@ -136,21 +136,31 @@ button:hover {
     padding-bottom: 30px;
     padding-top: 30px;
 }
-.portfolio-list {
-    list-style:none; 
-    columns: 3;
+.portfolio-list { 
+    /* columns: 3; */
+    max-width: 1170px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+}
+.portfolio-list-img {
+    max-width: 370px;
 }
 .portfolio-list-item:hover {
     transform: scale(1.05);
     transition: all 0.3s;
 }
 .portfolio-list-item {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 404px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid #EEEEEE;
-    margin: 0 30px 30px;
+    box-sizing: border-box;
 }
 .portfolio-list-title {
     padding-left: 30px;
@@ -181,7 +191,16 @@ button:hover {
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.address-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 9px;
+} 
 .footer {
     background-color: var(--bkg-color);
     color:white;
@@ -204,7 +223,6 @@ button:hover {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
-    padding-left: 40px;
 }
 .address-list-location { 
     color: #FFFFFF;
@@ -220,10 +238,4 @@ button:hover {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-}
-.address-list-item {
-    padding-bottom: 9px;
-}
-.address-list {
-    padding-top: 20px;
 }
