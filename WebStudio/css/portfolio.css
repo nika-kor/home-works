@@ -115,20 +115,10 @@ body {
 button:hover {
     transform: scale(1.05);
     transition: all 0.3s;
+    background-color: #2196F3;
 }
 .filter-list-btn {
     background-color: #F5F4FA;
-    padding: 8px 20px 8px 20px;
-    border: none;
-    border-radius: 3px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.active {
-    background-color: #2196F3;
     padding: 8px 20px 8px 20px;
     border: none;
     border-radius: 3px;
@@ -145,8 +135,6 @@ button:hover {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    /* padding-bottom: 30px;
-    padding-top: 30px; */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -201,16 +189,6 @@ button:hover {
 
 /* footer */
 
-.wrap-footer {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 .address-list {
     display: flex;
     flex-direction: column;
@@ -241,6 +219,7 @@ button:hover {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    padding-bottom: 20px;
 }
 .address-list-location { 
     color: #FFFFFF;
