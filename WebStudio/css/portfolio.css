@@ -10,6 +10,9 @@ body {
 
    /* nav */
 
+header {
+    border-bottom: 2px solid #ECECEC;
+}
 .nav {
     display: flex;
     justify-content: space-between;
