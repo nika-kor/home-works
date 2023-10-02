@@ -158,6 +158,38 @@ body {
     gap: 30px;
     padding: 0;
 }
+.features-decoration-first::before {
+    content: "";
+    background-image: url(../image/Group-antene.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-decoration-second::before {
+    content: "";
+    background-image: url(../image/Group-alarm.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-decoration-third::before {
+    content: "";
+    background-image: url(../image/Group-computer.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.features-decoration-fourth::before {
+    content: "";
+    background-image: url(../image/Group-cosmo.png);
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
 .features-list-title {
     margin-top: 0;
     font-weight: 700;
@@ -168,6 +200,7 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
     padding-bottom: 10px;
+    padding-top: 30px;
 }
 .features-list-desc {
     font-weight: 400;
