@@ -8,6 +8,23 @@ body {
     font-size: 14px;
 }
 
+/* scrol */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #EEEEEE;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3da3f5;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+    transition: 1s;
+    background-color: #2196F3;
+}
+
    /* nav */
 
 header {
@@ -48,22 +65,26 @@ header {
     font-size: 26px;
 }
 
-.contacts-list-link:hover{
-    color: #2196F3;
-}
 .contacts-list-link {
     color: var(--link-color);
+    font-size: inherit;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    transition: all 0.5s;
+}
+.contacts-list-link svg {
+    fill: currentColor;
 }
 .nav-list-link {
     color: var(--link-color); 
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    font-size: inherit;
     text-align: left;
+    transition: all 0.5s;
 }
 .nav-list-link:hover {
     color: #2196F3;
@@ -193,11 +214,16 @@ button:hover {
 
 /* footer */
 
+.footer-wrap {
+    display: flex;
+    gap: 70px;
+}
 .address-list {
     display: flex;
     flex-direction: column;
     padding-left: 0;
     gap: 9px;
+    padding-top: 20px;
 } 
 .footer {
     background-color: var(--bkg-color);
@@ -214,7 +240,6 @@ button:hover {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
 }
 .footer-logo {
     font-family: Raleway; 
@@ -222,8 +247,6 @@ button:hover {
     font-size: 26px;  
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
-    padding-bottom: 20px;
 }
 .address-list-location { 
     color: #FFFFFF;
@@ -231,12 +254,39 @@ button:hover {
     font-family: Roboto;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: left;
 }
 .address-list-link {
     font-weight: 400; 
     color: #FFFFFF99;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: left;
+}
+.footer-title {
+    padding-bottom: 20px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-list {
+    display: flex;
+    gap: 10px;
+}
+.footer-list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+.footer-list-item-link svg {
+    fill: currentColor;
+}
+.footer-list-item-link:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
 }

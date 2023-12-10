@@ -15,6 +15,23 @@ body {
     padding-right: 15px;
 }
 
+/* scrol */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #EEEEEE;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3da3f5;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+    transition: 1s;
+    background-color: #2196F3;
+}
+
     /* nav */
 
 
@@ -53,22 +70,27 @@ body {
     font-size: 26px;
 }
 
-.contacts-list-link:hover{
-    color: #2196F3;
-}
+
 .contacts-list-link {
     color: var(--link-color);
+    font-size: inherit;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
+    transition: all 0.5s;
+}
+.contacts-list-link svg {
+    fill: currentColor;
 }
 .nav-list-link {
     color: var(--link-color); 
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    font-size: inherit;
     text-align: left;
+    transition: all 0.5s;
 }
 .nav-list-link:hover {
     color: #2196F3;
@@ -145,10 +167,10 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     margin: 0 auto;
+    transition: all 1s;
 }
 .section-hero-btn:hover {
     transform: scale(1.05);
-    transition: all 0.3s;
 }
 
     /* Особливості */
@@ -227,6 +249,26 @@ body {
     justify-content: space-between;
     gap: 30px;
 }
+.work-list-item-wrap {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+}
+.work-list-item-desc {
+    max-width: 370px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 3px;
+}
 .section-work-title {
     text-align: center;
     font-size: 36px;
@@ -245,8 +287,6 @@ body {
 
 .section-team {
     background-color: #F5F4FA;
-    width: 100%;
-    height: 648px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -266,10 +306,30 @@ body {
 .team-list-item {
     width: 100%;
     max-width: 270px;
-    height: 368px;
     background-color: white;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+}
+.team-list-second {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px 30px 32px;
+}
+.team-list-item-second-link {
+    border-radius: 50%;
+    padding: 12px;
+    color: #AFB1B8;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-list-item-second-link svg {
+    fill: currentColor;
+}
+.team-list-item-second-link:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
 }
 .team-list-img {
     max-width: 100%;
@@ -293,13 +353,55 @@ body {
     letter-spacing: 0.03em;
 }
 
+    /* Постійні клієнти */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-title {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+    outline: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    transition: all 1s;
+}
+.clients-link svg {
+    fill: currentColor;
+}
+.clients-link:hover {
+    color: var(--active-link-color);
+    outline: 1px solid var(--active-link-color);
+}
+
     /* footer */
 
+.footer-wrap {
+    display: flex;
+    gap: 70px;
+}
 .address-list {
     display: flex;
     flex-direction: column;
     padding-left: 0;
     gap: 9px;
+    padding-top: 20px;
 } 
 .footer {
     background-color: var(--bkg-color);
@@ -316,7 +418,6 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
 }
 .footer-logo {
     font-family: Raleway; 
@@ -324,8 +425,6 @@ body {
     font-size: 26px;  
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;
-    padding-bottom: 20px;
 }
 .address-list-location { 
     color: #FFFFFF;
@@ -333,12 +432,39 @@ body {
     font-family: Roboto;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: left;
 }
 .address-list-link {
     font-weight: 400; 
     color: #FFFFFF99;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    text-align: left;
+}
+.footer-title {
+    padding-bottom: 20px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-list {
+    display: flex;
+    gap: 10px;
+}
+.footer-list-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+.footer-list-item-link svg {
+    fill: currentColor;
+}
+.footer-list-item-link:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
