@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -68,7 +67,7 @@
     <section class="section-hero">
         <div class="wrap-hero">
             <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="section-hero-btn">Замовити послугу</button>
+            <button class="btn-open" data-modal-open>Замовити послугу</button>
         </div>
     </section>
 
@@ -401,5 +400,51 @@
         </div>
     </footer>
 
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button class="btn-close" data-modal-close><svg width="18" height="18"><use href="./symbol-defs.svg#close"></use></svg></button>
+        <p class="modal-desc">Залиште свої дані, ми вам передзвонимо</p>
+
+        <form>
+            <label for="" class="label">
+                Ім'я
+                <span class="input-span">
+                    <input type="text" class="input-name" minlength="2" maxlength="5" required name="name">
+                    <svg width="18" height="18" class="svg-modal"><use href="./symbol-defs.svg#person"></use></svg>
+                </span>
+            </label>
+            <label for="" class="label">
+                Телефон
+                <span class="input-span">
+                    <input type="tel" class="input-tel" required name="tel">
+                    <svg width="18" height="18" class="svg-modal"><use href="./symbol-defs.svg#phone"></use></svg>
+                </span>
+            </label>
+            <label for="" class="label">
+                Пошта
+                <span class="input-span">
+                <input type="email" class="input-email" required name="email">
+                <svg width="18" height="18" class="svg-modal"><use href="./symbol-defs.svg#email"></use></svg>
+                </span>
+            </label>
+
+            <label for="" class="label" required>
+                Коментар
+                <textarea name="msg" id="" cols="30" rows="10" placeholder="Введіть текст" class="textarea"></textarea>
+            </label>
+
+            <label for="" class="checkbox label">
+                <input type="checkbox" required name="agree">
+                Погоджуюся з розсилкою та приймаю <a href="" class="checkbox-link">Умови договору</a>
+            </label>
+
+            <button type="submit" class="btn-submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
 </body>
 </html>
