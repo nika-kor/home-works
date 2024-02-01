@@ -24,17 +24,17 @@
     position: absolute;
     top: 0;
     left: 100%;
-    /* width: 100%; */
-    width: 40px;
+    width: 100%;
+    /* width: 40px; */
     height: 500px;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: gray;
-    /* transform: translateX(-100%);
-    transition: transform 2s ease; */
-    transition: width 1s;
+    transform: translateX(-100%);
+    transition: transform 2s ease;
+    /* transition: width 1s; */
 }
 
 .sub-menu:hover {
@@ -42,13 +42,13 @@
     width: 500px;
     left: 0;
 }
-/* .menu:hover .sub-menu {
+.menu:hover .sub-menu {
     transform: translateX(0);
-} */
-.sub-menu:hover,
+}
+/* .sub-menu:hover,
 .menu:hover .sub-menu {
     width: 500px;
-}
+} */
 
 li {
     font-size: 30px;
