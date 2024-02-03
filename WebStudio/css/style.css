@@ -26,7 +26,8 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     z-index: 2;
 } 
@@ -60,7 +61,8 @@ body {
     line-height: 1;
     display: flex;
     align-items: center;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close > svg {
     fill: currentColor;
@@ -158,7 +160,8 @@ body {
     border-radius: 4px;
     background-color: var(--active-link-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit:hover {
     background-color: #1677c4;
@@ -177,7 +180,8 @@ body {
     border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    transition: 1s;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2196F3;
 }
 
@@ -235,7 +239,8 @@ header {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
-    transition: all 0.5s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-link svg {
     fill: currentColor;
@@ -250,7 +255,8 @@ header {
     transition: all 0.5s;
     position: relative;
     padding: 32px  2px 29px 2px;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover {
     color: var(--active-link-color);
@@ -265,7 +271,8 @@ header {
     height: 4px;
     background-color: transparent;
     border-radius: 2px;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover::after, 
 .nav-list-link.active::after {
@@ -348,7 +355,8 @@ header {
     letter-spacing: 0.06em;
     text-align: center;
     margin: 0 auto;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-open:hover {
     transform: scale(1.05);
@@ -500,7 +508,8 @@ header {
     border-radius: 50%;
     padding: 12px;
     color: #AFB1B8;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -561,7 +570,8 @@ header {
     outline: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px 16px 32px;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link svg {
     fill: currentColor;
@@ -639,7 +649,8 @@ header {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.10);
     color: #FFFFFF;
-    transition: all 0.5s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item-link svg {
     fill: currentColor;
@@ -690,7 +701,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    transition:  background-color 1s;
+    transition:  background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-btn:hover {
     background-color: #145c96;

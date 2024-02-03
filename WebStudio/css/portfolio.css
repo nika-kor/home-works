@@ -21,7 +21,8 @@ body {
     border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    transition: 1s;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2196F3;
 }
 
@@ -79,7 +80,8 @@ header {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
-    transition: all 0.5s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-link svg {
     fill: currentColor;
@@ -94,7 +96,8 @@ header {
     transition: all 0.5s;
     position: relative;
     padding: 32px  2px 29px 2px;
-    transition: all 1s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover {
     color: var(--active-link-color);
@@ -106,14 +109,15 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-height: 4px;
-background-color: transparent;
-border-radius: 2px;
-transition: all 1s;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover::after, 
 .nav-list-link.active::after {
-background-color: var(--active-link-color);
+    background-color: var(--active-link-color);
 }
 .active {
     color: var(--active-link-color);
@@ -167,7 +171,8 @@ background-color: var(--active-link-color);
 }
 button:hover {
     transform: scale(1.05);
-    transition: all 0.3s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2196F3;
 }
 .filter-list-btn {
@@ -209,7 +214,8 @@ button:hover {
 .portfolio-list-item:hover {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 1px 4px 6px 0px #00000029,0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
-    transition: 0.5s;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item {
     max-width: 370px;
@@ -237,7 +243,8 @@ button:hover {
     max-width: 370px;
     height: 295px;
     transform: translateY(-100%);
-    transition: transform 0.5s ease;
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(33, 150, 243, 0.90);
 }
 .portfolio-list-item:hover .overlay {
@@ -333,7 +340,8 @@ button:hover {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.10);
     color: #FFFFFF;
-    transition: all 0.5s;
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item-link svg {
     fill: currentColor;
@@ -386,7 +394,8 @@ button:hover {
     align-items: center;
     gap: 10px;
 
-    transition:  background-color 1s;
+    transition:  background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-btn:hover {
     background-color: #145c96;
