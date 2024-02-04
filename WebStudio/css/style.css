@@ -26,7 +26,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
-    transition: opacity 250ms;
+    transition: opacity 250ms ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     z-index: 2;
@@ -34,6 +34,9 @@ body {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+}
+.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
 }
 .no-scroll {
     overflow: hidden;
@@ -46,8 +49,9 @@ body {
     min-height: 581px;
     padding: 40px;
     background-color: white;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     text-align: center;
+    transition: all 250ms ease;
 }
 
 .btn-close {
